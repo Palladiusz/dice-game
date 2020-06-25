@@ -36,7 +36,6 @@
           <div class="player-current-score" id="current-1">0</div>
         </div>
       </div>
-
       <button class="btn-new">
         <i class="ion-ios-plus-outline"></i>New game
       </button>
@@ -44,8 +43,53 @@
       <button class="btn-hold">
         <i class="ion-ios-download-outline"></i>Hold
       </button>
+      <input
+        class="win-score"
+        type="text"
+        placeholder="Win Score"
+        id="win-score"
+        name="win-score"
+      />
 
       <img src="dice-5.png" alt="Dice" class="dice" />
+      <img src="dice-5.png" alt="Dice2" class="dice2" />
+      <div class="unlucky" id="double6">
+        <p>Oh no! You rolled 6 twice in a row! Such unlucky :(</p>
+      </div>
+      <div class="unlucky" id="roll1">
+        <p>Oh no! You rolled 1! Unlucky :(</p>
+      </div>
+      <div class="rules-box">
+        <h1><em>GAME RULES:</em></h1>
+        <ul>
+          <li>The game has 2 players, playing in rounds;</li>
+          <li>
+            In each turn, a player rolls with two dices as many times as he
+            whishes. Each result get added to his CURRENT score;
+          </li>
+          <li>
+            If the player rolls a 1 on any dice, all his CURRENT score gets
+            lost. After that, it's the next player's turn;
+          </li>
+          <li>
+            If the player rolls on one dice 6 twice in a row, all his CURRENT
+            score and GLOBAL score is lost. After that, it's the next player's
+            turn;
+          </li>
+          <li>
+            The player can choose to 'Hold', which means that his CURRENT score
+            gets added to his GLOBAL score. After that, it's the next player's
+            turn;
+          </li>
+          <li>
+            The first player who reach Win Score amount points on GLOBAL score
+            wins the game;
+          </li>
+          <li>
+            Default value of Win Score is 100, but You can set it by Yourself.
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="app.js"></script>
